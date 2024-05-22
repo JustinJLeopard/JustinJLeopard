@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Justin</h1>
 <h3 align="center">A passionate Full-Stack Developer</h3>
 
-- 🔭 I’m currently working on a personal project that provides a comprehensive platform that allows users to list, manage, and book properties with ease. From exotic vacations to city escapes, iRental offers a wide range of property options for renters and buyers alike. Sellers can effortlessly manage their listings, while users can explore and book stays in just a few clicks. [iRentals](https://gitlab.com/irentals/i-rentals)
+- 🔭 I’m currently working on a personal project that provides a comprehensive platform that allows users to list, manage, and book properties with ease. From exotic vacations to city escapes, iRentals offers a wide range of property options for renters and buyers alike. Sellers can effortlessly manage their listings, while users can explore and book stays in just a few clicks. [iRentals](https://gitlab.com/irentals/i-rentals)
 
 - 🌱 I’m currently learning **React.js, Next.js, Tailwind, DaisyUI, Vite, Stripe**
 
