@@ -1,15 +1,13 @@
 <h1 align="center">Hi 👋, I'm Justin</h1>
 <h3 align="center">A passionate Full-Stack Developer</h3>
 
-- 🔭 I’m currently working on a personal project that provides a comprehensive platform that allows users to list, manage, and book properties with ease. From exotic vacations to city escapes, iRentals offers a wide range of property options for renters and buyers alike. Sellers can effortlessly manage their listings, while users can explore and book stays in just a few clicks. [iRentals](https://gitlab.com/irentals/i-rentals)
-
-- 🌱 I’m currently learning **React.js, Next.js, Tailwind, DaisyUI, Vite, Stripe**
+- 🌱 I’m currently learning **React.js, Next.js, Tailwind, DaisyUI, Vite, Stripe, React Native**
 
 - 👯 I’m looking to collaborate on an application designed for the management of automobile dealerships. At its core are three pivotal microservices: Inventory, Service Center, and Sales Center. [CarCar](https://gitlab.com/justinleopard/CarCar)
 
 - 👨‍💻 All of my projects are available at [https://gitlab.com/justinleopard](https://gitlab.com/justinleopard)
 
-- 💬 Ask me about **Python • JavaScript • Project Development • React • Technical Documentation**
+- 💬 Ask me about **Python • JavaScript • Mobile App Development • React/React Native • Technical Documentation**
 
 - 📫 How to reach me **justinleopard@gmail.com**
 
