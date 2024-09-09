@@ -5,7 +5,7 @@
 
 - 👯 I’m looking to collaborate on an application designed for the management of automobile dealerships. At its core are three pivotal microservices: Inventory, Service Center, and Sales Center. [CarCar](https://gitlab.com/justinleopard/CarCar)
 
-- 👨‍💻 All of my projects are available at [https://gitlab.com/justinleopard](https://gitlab.com/justinleopard)
+- 👨‍💻 All of my projects are available at https://github.com/JustinJLeopard
 
 - 💬 Ask me about **Python • JavaScript • Mobile App Development • React/React Native • Technical Documentation**
 
