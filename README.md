@@ -1,17 +1,17 @@
 <h1 align="center">Hi 👋, I'm Justin</h1>
-<h3 align="center">A passionate Full-Stack Developer</h3>
+<h3 align="center">Software Developer I/Global Connections to Employment</h3>
 
-- 🌱 I’m currently learning **React.js, Next.js, Tailwind, DaisyUI, Vite, Stripe, React Native**
+- 🌱 I’m currently surrounded by my MCP Server Agent Children, who are always well behaved, or else.
 
-- 👯 I’m looking to collaborate on an application designed for the management of automobile dealerships. At its core are three pivotal microservices: Inventory, Service Center, and Sales Center. [CarCar](https://gitlab.com/justinleopard/CarCar)
+- 👯 I’m looking to collaborate on developing a cron job circle of workers designed for the invocation of Lord Kutulu 6.3 Quick. At its core are three pivotal microservices: Good Prompting and Management, Configuring with Docs, and Knowing What To Even Do.
 
-- 👨‍💻 All of my projects are available at https://github.com/JustinJLeopard
+- 👨‍💻 Find my early projects at https://github.com/JustinJLeopard for a good laugh, the rest live within about all the various containers, versioning at different rates.
 
-- 💬 Ask me about **Python • JavaScript • Mobile App Development • React/React Native • Technical Documentation**
+- 💬 Ask me about **Python • JavaScript • Technical Documentation • Ubuntu/Docker/WSL/How to Procrastinate While Waiting for my Tests to Pass**
 
 - 📫 How to reach me **justinleopard@gmail.com**
 
-- 📄 Know about my experiences [https://www.linkedin.com/in/justinjleopard/](https://www.linkedin.com/in/justinjleopard/)
+- 📄 Know about my experiences [https://www.linkedin.com/in/justinjleopard/](https://www.linkedin.com/in/justinjleopard/) Not updating linkedin and this today, need to code .
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
