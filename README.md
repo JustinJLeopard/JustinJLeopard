@@ -15,12 +15,12 @@ I build AI systems that do real work — autonomous agents, multi-model orchestr
 ## Tech
 
 ```
-Languages     Python · TypeScript · JavaScript · Bash
-AI/ML         Multi-model orchestration · MCP · Agent swarms · SAFLA · Claude · GPT
-Backend       FastAPI · Django · Hono · Node.js · Bun
-Frontend      React · Tailwind · Next.js
-Infra         Docker · WSL · Linux · PostgreSQL · MongoDB · DuckDB
-tic           What I build has to work — not just demo well
+Languages     Python · TypeScript · JavaScript · Bash · Java
+AI/ML         Multi-model orchestration · MCP · Agent swarms · SAFLA · Local AI · Various Models/Configurations
+Backend       FastAPI · Django · Hono · Node.js · Bun · Springboot
+Frontend      React · Tailwind · Next.js · CSS/HTML
+Infra         Docker · WSL · Linux · PostgreSQL · MongoDB · DuckDB · SpacetimeDB
+tic           What I build has to work — not just seem like it does
 ```
 
 ## Background
