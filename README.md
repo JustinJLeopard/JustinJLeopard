@@ -6,14 +6,17 @@ I care about the unglamorous parts of agent systems: the queue, trace, sandbox, 
 
 ## Current Focus
 
-| Surface | What it proves |
-| --- | --- |
-| [JustAi](https://github.com/JustinJLeopard/JustAi) | Control plane for multi-agent engineering work: intent, plan, execute, review, synthesize. |
-| [JustAi demo](https://justai-demo.vercel.app) | Browser-visible mission control for task state, memory, trajectories, agents, cost, latency, and review quality. |
-| [safe-mini](https://github.com/JustinJLeopard/safe-mini) | Safe-by-construction local execution for mini-swe-agent-style bash-action loops. |
-| [route-mini](https://github.com/JustinJLeopard/route-mini) | Multi-provider LLM routing with fallback, budget, latency targets, and decision logging. |
-| [memory-mini](https://github.com/JustinJLeopard/memory-mini) | Durable namespaced memory with upsert-first semantics, soft delete, cleanup, and optional embeddings. |
-| [lab-mini](https://github.com/JustinJLeopard/lab-mini) | Repeatable data-science lab loop: load, profile, analyze, claim, report. |
+| Surface | Maturity | What to inspect |
+| --- | --- | --- |
+| [JustAi](https://github.com/JustinJLeopard/JustAi) | Prototype | Intent, planning, review, and checkpoint control plane. The public execution path is currently unwired and fails closed. |
+| [JustAi demo](https://justai-demo.vercel.app) | Simulation | Deterministic, fixture-backed mission-control walkthrough. It has no backend or live agents. |
+| [safe-mini](https://github.com/JustinJLeopard/safe-mini) | Alpha substrate | Policy-guarded local bash-action loop. Built-in executors run in the host process; isolation requires an injected executor boundary. |
+| [route-mini](https://github.com/JustinJLeopard/route-mini) | Reference | Deterministic multi-provider routing policy with fallback, budget, latency targets, and decision records. |
+| [memory-mini](https://github.com/JustinJLeopard/memory-mini) | Reference | Namespaced memory semantics: upsert, soft delete, cleanup, retrieval, and optional embeddings. |
+| [lab-mini](https://github.com/JustinJLeopard/lab-mini) | Reference | Repeatable data-science lab loop: load, profile, analyze, claim, report. |
+
+These labels describe the public artifacts as they work today, not the larger
+architecture they are intended to become.
 
 ## Operating Thesis
 
@@ -25,12 +28,12 @@ Agents get useful when the system around them is engineered like production infr
 - **Memory has lifecycle.** Durable context needs namespacing, upsert, retention, and cleanup rather than chat-history luck.
 - **Evaluation should change behavior.** A score that does not route, block, or teach the next run is mostly decoration.
 
-## Public Proof Path
+## Public Inspection Path
 
 - Portfolio and writing: [delegateandorchestrate.com](https://www.delegateandorchestrate.com)
-- Live demo: [justai-demo.vercel.app](https://justai-demo.vercel.app)
-- Flagship repo: [JustAi](https://github.com/JustinJLeopard/JustAi)
-- Substrate repos: [safe-mini](https://github.com/JustinJLeopard/safe-mini), [route-mini](https://github.com/JustinJLeopard/route-mini), [memory-mini](https://github.com/JustinJLeopard/memory-mini), [lab-mini](https://github.com/JustinJLeopard/lab-mini)
+- Interactive simulation: [justai-demo.vercel.app](https://justai-demo.vercel.app)
+- Control-plane prototype: [JustAi](https://github.com/JustinJLeopard/JustAi)
+- Substrate and reference repos: [safe-mini](https://github.com/JustinJLeopard/safe-mini), [route-mini](https://github.com/JustinJLeopard/route-mini), [memory-mini](https://github.com/JustinJLeopard/memory-mini), [lab-mini](https://github.com/JustinJLeopard/lab-mini)
 
 ## Systems I Track Closely
 
