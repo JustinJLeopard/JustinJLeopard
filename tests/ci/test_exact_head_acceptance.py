@@ -15,9 +15,13 @@ BASE = 'main'
 
 
 class PublisherContract(unittest.TestCase):
-    def run_publisher(self, *, environment=None, pr=None, response=None, api_fails=False):
+    def run_publisher(self, *, environment=None, pr=None, response=None, api_fails=False, rewrite=None):
         source = WORKFLOW.read_text()
         script = textwrap.dedent(source.split('        run: |\n', 1)[1])
+        if rewrite is not None:
+            old, new = rewrite
+            self.assertIn(old, script)
+            script = script.replace(old, new)
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             (root / 'publisher.sh').write_text(script)
@@ -26,9 +30,15 @@ class PublisherContract(unittest.TestCase):
             stub.write_text('''#!/usr/bin/env python3
 import json, os, pathlib, sys
 root = pathlib.Path(os.environ['STUB_ROOT'])
-if sys.argv[1:3] == ['pr', 'view']:
+expected_pr = ['pr', 'view', os.environ['PR_NUMBER'], '--repo',
+               os.environ['GITHUB_REPOSITORY'], '--json',
+               'state,isDraft,baseRefName,headRefOid,isCrossRepository']
+expected_api = ['api', '-X', 'POST', '-H', 'Accept: application/vnd.github+json',
+                'repos/' + os.environ['GITHUB_REPOSITORY'] + '/check-runs',
+                '--input', '-']
+if sys.argv[1:] == expected_pr:
     print(os.environ['STUB_PR'])
-elif sys.argv[1] == 'api':
+elif sys.argv[1:] == expected_api:
     payload = json.load(sys.stdin)
     (root / 'published.json').write_text(json.dumps(payload))
     if os.environ['STUB_API_FAILS'] == '1':
@@ -90,6 +100,20 @@ else:
             with self.subTest(field=field):
                 result, _ = self.run_publisher(response={field: value})
                 self.assertNotEqual(result.returncode, 0)
+
+    def test_wrong_transport_arguments_fail(self):
+        for old, new in [
+            ('--repo "$GITHUB_REPOSITORY"', '--repo "wrong/repo"'),
+            ('view "$PR_NUMBER"', 'view "999"'),
+            ('state,isDraft,baseRefName,headRefOid,isCrossRepository', 'state'),
+            ('-X POST', '-X GET'),
+            ('repos/$GITHUB_REPOSITORY/check-runs', 'repos/wrong/repo/check-runs'),
+            ('--input -', '--input missing.json'),
+        ]:
+            with self.subTest(argument=old):
+                result, payload = self.run_publisher(rewrite=(old, new))
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIsNone(payload)
 
     def test_api_failure_fails(self):
         result, _ = self.run_publisher(api_fails=True)
